@@ -1,6 +1,8 @@
 # Homework1
 READ ME
+
 -To visualize the robot in rviz2 use the following command:
+
 $ros2 launch arm_description display.launch.py
 When rviz2 is open, to visualize the robot it’s necessary set the voice “Fixed frame” = “world”, add “RobotModel” and set in it the voice “Description Topic” = “/robot_description”
 
