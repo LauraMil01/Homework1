@@ -20,12 +20,6 @@ When rqt_image_view is open, to view the image it’s necessary select “/video
 
     $ ros2 run arm_controller talk_list
 
-In another terminal, to publish the joints’ position via command line we use:
-
-    $ ros2 topic pub JointPositionController/commands std_msgs/msg/Float64MultiArray "{data: [0 ,0, 0, 0]}"
-
-(you can change the values in data)
-
 -We have added a record of the robot changing its configuration. To rewatch the record, unzip the "bag_files" folder and write on terminal this command:
 
     $ ros2 launch arm_gazebo arm_gazebo.launch.py
