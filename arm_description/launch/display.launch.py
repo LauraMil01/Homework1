@@ -25,7 +25,7 @@ def generate_launch_description():
         DeclareLaunchArgument(
             "rviz_config_file", #this will be the name of the argument  
             default_value=PathJoinSubstitution(
-                [FindPackageShare("arm_description"), "config", "rviz", "arm.rviz"]
+                [FindPackageShare("arm_description"), "config", "rviz", "standing.rviz"]
             ),
             description="RViz config file (absolute path) to use when launching rviz.",
         )
@@ -33,7 +33,7 @@ def generate_launch_description():
     
     urdf_arm = os.path.join(arm_description_path, "urdf", "arm.urdf.xacro")
  
-    rviz_config = os.path.join(arm_description_path, "config", "rviz", "arm.rviz")
+    rviz_config = os.path.join(arm_description_path, "config", "rviz", "standing.rviz")
 
 
     robot_description_arm = {"robot_description": Command(['xacro ', urdf_arm])}
