@@ -32,6 +32,6 @@ In another terminal, to publish the joints’ position via command line we use:
 
 and on another terminal, we write:
 
-    $ cd src/bag_files/rosbag2_2024_10_29-20_18_22
+    $ cd src/Homework1/bag_files/rosbag2_2024_10_29-20_18_22
 
     $ ros2 bag play rosbag2_2024_10_29-20_18_22_0.db3
